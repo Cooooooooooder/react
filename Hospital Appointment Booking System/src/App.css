@@ -1,0 +1,148 @@
+
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #f4f6f8;
+  color: #073980;
+}
+ 
+.app {
+width: 70%;
+  margin: 40px auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+ 
+.app {
+  color: #94a3b9;
+}
+
+.app .app-title {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: #114dcf;
+}
+ 
+.app-count {
+  margin: 4px 0 20px;
+  text-align: center;
+  color: #b47328;
+  font-size: 0.9rem;
+}
+ 
+.add-form,
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+ 
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+ 
+.input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+ 
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+ 
+.btn:active {
+  transform: scale(0.97);
+}
+ 
+.btn-add {
+  padding: 10px 14px;
+  background: #2563eb;
+  color: #fff;
+}
+.btn-add:hover { background: #1d4ed8; }
+ 
+.btn-update { background: #dbeafe; color: #1d4ed8; }
+.btn-update:hover { background: #bfdbfe; }
+ 
+.btn-delete { background: #fee2e2; color: #b91c1c; }
+.btn-delete:hover { background: #fecaca; }
+ 
+.btn-save { background: #16a34a; color: #fff; }
+.btn-save:hover { background: #15803d; }
+ 
+.btn-cancel { background: #e5e7eb; color: #374151; }
+.btn-cancel:hover { background: #d1d5db; }
+ 
+.appt-list {
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+}
+ 
+.appt-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+ 
+.appt-item.editing {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+ 
+.appt-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+ 
+.appt-title {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+ 
+.appt-date {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+ 
+.actions {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+ 
+.empty {
+  margin-top: 24px;
+  text-align: center;
+  color: #8c9917;
+}
+ 

@@ -9,7 +9,6 @@ function App() {
     <>
       <section >
         <Header />
-        <Body />
       </section>
     </>
   );
